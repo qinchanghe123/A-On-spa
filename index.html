@@ -356,6 +356,21 @@
             vertical-align: middle;
         }
 
+        /* --- SECTION: GIRL --- */
+        .girl-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        .girl-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            object-fit: cover;
+            aspect-ratio: 3/4; /* Ensures consistent vertical aspect ratio */
+        }
+
         /* --- SECTION 4: BOOKING --- */
         .booking-layout {
             display: grid;
@@ -593,6 +608,11 @@
 
             .about-image { order: -1; margin-bottom: 2rem; width: 100%; }
             
+            .girl-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
             section {
                 padding: 3rem 1.5rem;
             }
@@ -616,6 +636,7 @@
                 <a href="#home" class="nav-link" onclick="closeMenu()">Home</a>
                 <a href="#services" class="nav-link" onclick="closeMenu()">Services</a>
                 <a href="#about" class="nav-link" onclick="closeMenu()">About Us</a>
+                <a href="#girl" class="nav-link" onclick="closeMenu()">Girl</a>
                 <a href="#reviews" class="nav-link" onclick="closeMenu()">Reviews</a>
                 <a href="#faq" class="nav-link" onclick="closeMenu()">FAQs</a>
                 <a href="#contact" class="nav-link" onclick="closeMenu()">Contact</a>
@@ -758,6 +779,16 @@
                 <div class="about-image">
                     <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80" alt="Spa Interior">
                 </div>
+            </div>
+        </section>
+
+        <!-- SECTION: GIRL (New Section) -->
+        <section id="girl">
+            <div class="girl-grid">
+                <img src="1.jpg" alt="Girl 1">
+                <img src="2.jpg" alt="Girl 2">
+                <img src="3.jpg" alt="Girl 3">
+                <img src="4.jpg" alt="Girl 4">
             </div>
         </section>
 
